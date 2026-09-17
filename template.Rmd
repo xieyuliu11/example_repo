@@ -63,6 +63,12 @@ la_df= tibble(
 ggplot(la_df, aes(x = abs_var))+geom_histogram()
 ```
 
+what if I try to add a histogram
+
+```{r}
+ggplot(plot_df, aes(x=x)) + geom_histogram()
+```
+
 The median is `r round(median(pull(la_df, num_var)),2)`
 
 # Section6 : Formating
